@@ -15,6 +15,8 @@ Não existe nenhum limite para o número de itens que pode ser vendido.
  */
 package capitulo4.teste;
 
+import java.util.Scanner;
+
 /**
  * @version 1.0
  * @since 2021-09-01
@@ -23,7 +25,33 @@ package capitulo4.teste;
 public class ComissaoTest {
 
     public static void main(String[] args) {
-
+        Scanner sc = new Scanner(System.in);
+        double item1 = 239.99, item2 = 129.75, item3 = 99.95, item4 = 350.89,
+                valorSalario = 200, valorComissao = 0.09, valorMercadoria, totSalario;
+        int quantidadeItem1, quantidadeItem2, quantidadeItem3, quantidadeItem4;
+        
+        System.out.println("-----SALÁRIO DO FUNCIONÁRIO COM COMISSÃO-----");
+        System.out.print("Informe a quantidade de Item 1 vendido:");
+        quantidadeItem1 = sc.nextInt();
+        System.out.print("Informe a quantidade de Item 2 vendido:");
+        quantidadeItem2 = sc.nextInt();
+        System.out.print("Informe a quantidade de Item 3 vendido:");
+        quantidadeItem3 = sc.nextInt();
+        System.out.print("Informe a quantidade de Item 4 vendido:");
+        quantidadeItem4 = sc.nextInt();
+        
+        valorMercadoria = item1*quantidadeItem1+item2*quantidadeItem2+item3*
+                quantidadeItem3+item4*quantidadeItem4;
+        
+        totSalario = valorMercadoria*valorComissao;
+        totSalario += valorSalario;
+        
+        System.out.printf("Quantidade de Item 1 vendido:%d%n", quantidadeItem1);
+        System.out.printf("Quantidade de Item 2 vendido:%d%n", quantidadeItem2);
+        System.out.printf("Quantidade de Item 3 vendido:%d%n", quantidadeItem3);
+        System.out.printf("Quantidade de Item 4 vendido:%d%n", quantidadeItem4);
+        
+        System.out.printf("Salário do funcionário com comissão:%.2f%n", totSalario);
     }
 
 }
