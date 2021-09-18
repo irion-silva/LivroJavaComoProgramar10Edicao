@@ -36,9 +36,51 @@ package capitulo4.teste;
 public class OutroProblemaDoElseOscilanteTest {
 
     public static void main(String[] args) {
+        System.out.print("A-)");
         int x = 5, y = 8;
+        if (y == 8) 
+        if (x == 5) 
+        System.out.println("@@@@@");
+        else 
+        System.out.println("#####");
+        System.out.println("$$$$$");
+        System.out.println("&&&&&");
+        
+        System.out.println("----------");
+        
+        System.out.print("B-)");
+        x = 5; 
+        y = 8;
         if (y == 8){ 
         if (x == 5) 
+        System.out.println("@@@@@");
+        } else { 
+        System.out.println("#####");
+        System.out.println("$$$$$");
+        System.out.println("&&&&&");
+        }
+        
+        System.out.println("----------");
+        
+        System.out.print("C-)");
+        x = 5;
+        y = 8;
+        if (y == 8)
+        if (x == 5){
+                System.out.println("@@@@@");
+        } else {
+                System.out.println("#####");
+                System.out.println("$$$$$");
+                System.out.println("&&&&&");
+        }
+        
+        System.out.println("----------");
+        
+        System.out.print("D-)");
+        x = 5; 
+        y = 7;
+        if (y == 8){ 
+        if (x == 5)
         System.out.println("@@@@@");
         } else { 
         System.out.println("#####");
