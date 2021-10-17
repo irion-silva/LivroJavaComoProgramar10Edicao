@@ -17,24 +17,23 @@ import java.util.Scanner;
 public class Exer02_30 {
 
     public static void main(String[] args) {
-        System.out.println("-----SPACE BETWEEN WORDS-----");
+        System.out.println("-----ESPAÇO ENTRE NÚMEROS-----");
         Scanner input = new Scanner(System.in);
         
-        int number1, number2, number3, number4, number5;
+        int numero,numero1,numero2,numero3,numero4,numero5;
         
-        System.out.print("Enter the first number:");
-        number1 = input.nextInt();
-        System.out.print("Enter the second number:");
-        number2 = input.nextInt();
-        System.out.print("Enter the third number:");
-        number3 = input.nextInt();
-        System.out.print("Enter the fourth number:");
-        number4 = input.nextInt();
-        System.out.print("Enter the fifth number:");
-        number5 = input.nextInt();
+        System.out.print("Informe um número inteiro de cinco dígitos:");
+        numero = input.nextInt();
         
-        System.out.printf("%d\t%d\t%d\t%d\t%d%n",number1,number2,number3,
-                                                                number4,number5);
+        numero1 = (numero/10000)%10;
+        numero2 = (numero/1000)%10;
+        numero3 = (numero/100)%10;
+        numero4 = (numero/10)%10;
+        numero5 = numero%10;
+        
+        System.out.printf("%d  %d  %d  %d  %d\n",numero1,numero2,numero3,numero4,numero5);
+        
+        
         
     }
 
